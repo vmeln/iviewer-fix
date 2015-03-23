@@ -19,7 +19,7 @@
         };
 
         var midpoint = function (origX, origY, destX, destY) {
-            return { x: (origX + destX) / 2, y: (origY + destY) / 2 };
+            return { x: Math.abs(origX + destX) / 2, y: Math.abs(origY + destY) / 2 };
         };
 
         event.preventDefault();
